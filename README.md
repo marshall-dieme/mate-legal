@@ -1,5 +1,10 @@
 # Mate – pages légales
 
+En ligne : https://marshall-dieme.github.io/mate-legal/
+
+- Confidentialité : https://marshall-dieme.github.io/mate-legal/privacy.html
+- Suppression des données : https://marshall-dieme.github.io/mate-legal/data-deletion.html
+
 Site statique (HTML/CSS, sans build) avec les pages exigées par Meta (Facebook Login), Google Play et l'App Store :
 
 | Page | Fichier | Où la déclarer |
@@ -15,13 +20,9 @@ Chaque page est en français et en anglais : bouton FR / EN, langue du navigateu
 - Changer la date « Dernière mise à jour / Last updated » des deux langues à chaque modification.
 - Email de contact : `marshalldieme@gmail.com`, présent dans les trois pages.
 
-## Publier avec GitHub Pages
+## Publication
 
-1. Créer un dépôt public (par exemple `mate-legal`) et y pousser ce dossier.
-2. Dépôt → **Settings → Pages** → *Source* : **Deploy from a branch**, branche `main`, dossier `/ (root)`.
-3. Les pages sont en ligne en quelques minutes :
-   - `https://<compte>.github.io/mate-legal/privacy.html`
-   - `https://<compte>.github.io/mate-legal/data-deletion.html`
+GitHub Pages (branche `main`, dossier racine) : chaque push sur `main` met le site à jour en une ou deux minutes. Le dépôt doit rester public (Pages gratuit).
 
 ## Aperçu local
 
