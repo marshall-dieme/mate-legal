@@ -27,11 +27,11 @@
   <!-- ─────────────────────────── FRANÇAIS ─────────────────────────── -->
   <main class="card" data-lang="fr">
     <h1>Politique de confidentialité</h1>
-    <p class="updated">Dernière mise à jour : 6 octobre 2026</p>
+    <p class="updated">Dernière mise à jour : 5 novembre 2026</p>
 
     <p>Mate est une application de gestion de portefeuilles et de dépenses personnelles. Cette politique explique quelles données Mate traite, pourquoi, où elles sont conservées et comment tu peux les contrôler ou les supprimer.</p>
 
-    <div class="note">En bref : tes données servent uniquement à faire fonctionner l'application. Mate ne contient <strong>aucune publicité</strong>, <strong>aucun outil de mesure d'audience</strong>, et tes données ne sont <strong>ni vendues ni partagées</strong> à des fins commerciales.</div>
+    <div class="note">En bref : tes données servent uniquement à faire fonctionner l'application. Mate ne contient <strong>aucune publicité</strong> ni <strong>aucun outil de mesure d'audience</strong> (seulement un rapport de plantage anonyme), et tes données ne sont <strong>ni vendues ni partagées</strong> à des fins commerciales.</div>
 
     <h2>1. Responsable du traitement</h2>
     <p>L'éditeur de l'application Mate. Pour toute question relative à tes données : <a href="mailto:marshalldieme@gmail.com">marshalldieme@gmail.com</a>.</p>
@@ -46,26 +46,34 @@
     <h3>Données financières que tu saisis</h3>
     <ul>
       <li>Portefeuilles : nom, type (banque, mobile money, espèces), fournisseur, solde, couleur et note.</li>
-      <li>Transactions : montant, type, catégorie, description, date et heure, et la photo du ticket de caisse si tu en joins une.</li>
+      <li>Transactions : montant, type, catégorie, description, étiquettes, date et heure, et la photo du ticket de caisse si tu en joins une.</li>
+      <li>Organisation de ton budget : catégories personnalisées, budgets mensuels, transactions récurrentes et factures, objectifs d'épargne.</li>
+      <li>Dettes et prêts : le prénom ou le surnom de la personne, le montant, les dates et une note. Ces informations concernent une autre personne : n'indique que ce qui t'est utile pour t'en souvenir.</li>
+      <li>Tontines : nom de la tontine, nombre de membres, ton tour et ta cotisation (aucune information sur les autres membres).</li>
     </ul>
     <p>Mate ne se connecte pas à tes comptes bancaires ou de mobile money : seules les informations que tu saisis toi-même sont enregistrées.</p>
-    <h3>Données conservées uniquement sur ton téléphone</h3>
+    <h3>Données conservées sur ton téléphone</h3>
     <ul>
-      <li>Tes préférences : thème, couleur, langue, devise, portefeuille par défaut, mode discret, heure du rappel.</li>
+      <li>Une copie de tes données Mate, pour que l'application fonctionne sans connexion. Les changements faits hors ligne sont envoyés à nos serveurs dès que la connexion revient. Cette copie est effacée du téléphone quand tu te déconnectes.</li>
+      <li>Tes préférences : thème, couleur, langue, devise, portefeuille par défaut, mode discret, heures des rappels.</li>
       <li>Le verrouillage par empreinte, visage ou code utilise le système de ton téléphone : Mate reçoit seulement la réponse « déverrouillé » ou « refusé », jamais tes données biométriques.</li>
-      <li>Les rappels quotidiens sont des notifications programmées sur ton téléphone ; aucune donnée n'est envoyée pour les produire.</li>
+      <li>Les notifications (rappel quotidien, échéances, budgets, résumé du mois) sont programmées sur ton téléphone ; aucune donnée n'est envoyée pour les produire.</li>
+      <li>Le widget d'écran d'accueil affiche ton solde total ; il est masqué si le verrouillage ou le mode discret est activé.</li>
     </ul>
 
     <h2>3. Pourquoi nous utilisons ces données</h2>
     <ul>
       <li>Créer ton compte, t'authentifier et sécuriser l'accès à tes données.</li>
       <li>Enregistrer, afficher et synchroniser tes portefeuilles et transactions, et calculer tes soldes et statistiques.</li>
-      <li>T'envoyer les emails nécessaires au compte : confirmation d'inscription et réinitialisation du mot de passe.</li>
+      <li>T'envoyer les emails nécessaires au compte (confirmation d'inscription, réinitialisation du mot de passe), dans la langue choisie dans l'application.</li>
+      <li>Détecter et corriger les plantages de l'application (voir Sentry plus bas).</li>
     </ul>
     <p>Ces traitements reposent sur l'exécution du service que tu as demandé en créant un compte. Nous n'utilisons pas tes données pour te profiler ni pour te proposer de la publicité.</p>
 
-    <h2>4. Accès à l'appareil photo et aux photos</h2>
-    <p>Mate accède à l'appareil photo ou à ta galerie uniquement lorsque tu choisis d'ajouter une photo de profil ou un ticket de caisse. La photo choisie est alors enregistrée avec ton compte.</p>
+    <h2>4. Appareil photo, tickets et export</h2>
+    <p>Mate accède à l'appareil photo ou à ta galerie uniquement lorsque tu choisis d'ajouter une photo de profil ou un ticket de caisse. La photo choisie est alors enregistrée avec ton compte. Les photos de tickets sont stockées dans un espace privé : seul ton compte peut les ouvrir.</p>
+    <p>Quand tu demandes à Mate de lire un ticket, le texte est reconnu <strong>sur ton téléphone</strong> (ML Kit de Google, qui fonctionne hors ligne) : l'image n'est envoyée à aucun service pour cette lecture.</p>
+    <p>L'export CSV ou PDF de tes transactions est créé sur ton téléphone, puis partagé uniquement avec l'application que tu choisis (email, messagerie, fichiers…).</p>
 
     <h2>5. Où sont stockées tes données</h2>
     <p>Les données du compte et les données financières sont hébergées par <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>, sur des serveurs situés en Irlande (Union européenne). Les échanges entre l'application et ces serveurs sont chiffrés (HTTPS), et des règles d'accès en base de données garantissent que chaque utilisateur n'accède qu'à ses propres données.</p>
@@ -75,6 +83,7 @@
       <li><strong>Supabase</strong> : hébergement, base de données, stockage des photos et authentification.</li>
       <li><strong>Google, Apple, Facebook (Meta)</strong> : uniquement si tu choisis de te connecter avec l'un d'eux. Leur propre politique de confidentialité s'applique à leur service : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>, <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta</a>.</li>
       <li><strong>ExchangeRate-API</strong> (open.er-api.com) : fournit les taux de change pour afficher tes montants dans une autre devise. Aucune donnée personnelle ni financière ne lui est transmise.</li>
+      <li><strong><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a></strong> : reçoit un rapport quand l'application plante ou rencontre une erreur technique (message d'erreur, version de l'application, modèle et système du téléphone), <strong>sans</strong> adresse IP, email, capture d'écran ni données financières.</li>
     </ul>
 
     <h2>7. Durée de conservation</h2>
@@ -100,11 +109,11 @@
   <!-- ─────────────────────────── ENGLISH ─────────────────────────── -->
   <main class="card" data-lang="en" hidden>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 6, 2026</p>
+    <p class="updated">Last updated: November 5, 2026</p>
 
     <p>Mate is a personal wallet and expense tracking app. This policy explains what data Mate processes, why, where it is stored, and how you can control or delete it.</p>
 
-    <div class="note">In short: your data is used only to run the app. Mate contains <strong>no ads</strong> and <strong>no analytics</strong>, and your data is <strong>never sold or shared</strong> for commercial purposes.</div>
+    <div class="note">In short: your data is used only to run the app. Mate contains <strong>no ads</strong> and <strong>no analytics</strong> (only an anonymous crash report), and your data is <strong>never sold or shared</strong> for commercial purposes.</div>
 
     <h2>1. Data controller</h2>
     <p>The publisher of the Mate app. For any question about your data: <a href="mailto:marshalldieme@gmail.com">marshalldieme@gmail.com</a>.</p>
@@ -119,26 +128,34 @@
     <h3>Financial data you enter</h3>
     <ul>
       <li>Wallets: name, type (bank, mobile money, cash), provider, balance, color and note.</li>
-      <li>Transactions: amount, type, category, description, date and time, and a photo of the receipt if you attach one.</li>
+      <li>Transactions: amount, type, category, description, tags, date and time, and a photo of the receipt if you attach one.</li>
+      <li>Budget planning: custom categories, monthly budgets, recurring transactions and bills, savings goals.</li>
+      <li>Debts and loans: the first name or nickname of the person, the amount, dates and a note. This information is about someone else: only enter what you need to remember.</li>
+      <li>Tontines (savings circles): name, number of members, your turn and your contribution (no information about the other members).</li>
     </ul>
     <p>Mate does not connect to your bank or mobile money accounts: only the information you enter yourself is stored.</p>
-    <h3>Data kept only on your phone</h3>
+    <h3>Data kept on your phone</h3>
     <ul>
-      <li>Your preferences: theme, color, language, currency, default wallet, discreet mode, reminder time.</li>
+      <li>A copy of your Mate data, so the app works without a connection. Changes made offline are sent to our servers as soon as the connection is back. This copy is erased from the phone when you sign out.</li>
+      <li>Your preferences: theme, color, language, currency, default wallet, discreet mode, reminder times.</li>
       <li>Fingerprint, face or PIN lock uses your phone's system: Mate only receives an "unlocked" or "denied" answer, never your biometric data.</li>
-      <li>Daily reminders are notifications scheduled on your phone; no data is sent to produce them.</li>
+      <li>Notifications (daily reminder, due dates, budgets, monthly summary) are scheduled on your phone; no data is sent to produce them.</li>
+      <li>The home screen widget shows your total balance; it is hidden when the app lock or discreet mode is on.</li>
     </ul>
 
     <h2>3. Why we use this data</h2>
     <ul>
       <li>To create your account, authenticate you and secure access to your data.</li>
       <li>To store, display and sync your wallets and transactions, and compute your balances and statistics.</li>
-      <li>To send account emails: sign-up confirmation and password reset.</li>
+      <li>To send account emails (sign-up confirmation, password reset) in the language chosen in the app.</li>
+      <li>To detect and fix app crashes (see Sentry below).</li>
     </ul>
     <p>This processing is necessary to provide the service you requested by creating an account. We do not use your data for profiling or advertising.</p>
 
-    <h2>4. Camera and photo access</h2>
-    <p>Mate accesses your camera or photo library only when you choose to add a profile picture or a receipt. The selected photo is then stored with your account.</p>
+    <h2>4. Camera, receipts and export</h2>
+    <p>Mate accesses your camera or photo library only when you choose to add a profile picture or a receipt. The selected photo is then stored with your account. Receipt photos are kept in private storage: only your account can open them.</p>
+    <p>When you ask Mate to read a receipt, the text is recognized <strong>on your phone</strong> (Google ML Kit, which works offline): the image is not sent to any service for this.</p>
+    <p>CSV or PDF exports of your transactions are created on your phone, then shared only with the app you choose (email, messaging, files…).</p>
 
     <h2>5. Where your data is stored</h2>
     <p>Account and financial data are hosted by <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>, on servers located in Ireland (European Union). Traffic between the app and these servers is encrypted (HTTPS), and database access rules ensure each user can only access their own data.</p>
@@ -148,6 +165,7 @@
       <li><strong>Supabase</strong>: hosting, database, photo storage and authentication.</li>
       <li><strong>Google, Apple, Facebook (Meta)</strong>: only if you choose to sign in with one of them. Their own privacy policy applies to their service: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>, <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta</a>.</li>
       <li><strong>ExchangeRate-API</strong> (open.er-api.com): provides exchange rates to display your amounts in another currency. No personal or financial data is sent to it.</li>
+      <li><strong><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a></strong>: receives a report when the app crashes or hits a technical error (error message, app version, phone model and system), <strong>without</strong> IP address, email, screenshot or financial data.</li>
     </ul>
 
     <h2>7. Retention</h2>
